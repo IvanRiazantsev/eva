@@ -1,4 +1,4 @@
-//@import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
 @import "home";
 
 $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
@@ -7,3 +7,98 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import '@fortawesome/fontawesome-free/scss/regular';
 @import '@fortawesome/fontawesome-free/scss/brands';
 @import '@fortawesome/fontawesome-free/scss/v4-shims';
+
+@import "@splidejs/splide/dist/css/themes/splide-skyblue.min";
+
+svg#nav-logo {
+  @include media-breakpoint-down(md) {
+    .logo_stop {
+      stop-color: #000;
+
+      &.second {
+        stop-color: #1f1f1f;
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .logo_stop {
+      stop-color: #fff;
+
+      &.inverted {
+        stop-color: #000;
+
+        -o-transition: stop-color 500ms linear;
+        -moz-transition: stop-color 500ms linear;
+        -webkit-transition: stop-color 500ms linear;
+        -ms-transition: stop-color 500ms linear;
+        transition: stop-color 500ms linear;
+      }
+
+      &.second {
+        stop-color: #1f1f1f;
+
+        &.inverted {
+          stop-color: #e0e0e0;
+        }
+      }
+    }
+  }
+}
+
+svg.flag-svg {
+
+  &:hover {
+    circle.selected-circle:not(.current_circle) {
+      opacity: 0.5;
+    }
+  }
+
+  circle.selected-circle {
+    opacity: 0;
+
+    &.current_circle {
+      opacity: 1;
+    }
+  }
+
+}
+
+.splide__arrow.splide__custom_array_color > svg {
+  fill: white;
+}
+
+.design-section {
+  //background: linear-gradient(to top, #464646 61%, #f8f9fa 100%);
+  background-color: #464646;
+}
+
+.circled-number {
+  font-size: 1.5em;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  body[data-locale='ru'] {
+    #mainNav {
+      padding-left: 0;
+      padding-right: 0;
+
+      .nav-link {
+        font-size: 0.9em;
+      }
+
+      .navbar-brand {
+        margin-right: 0;
+      }
+    }
+
+    svg {
+      &#nav-logo {
+        width: 65px;
+      }
+
+      &.flag-svg {
+        width: 35px;
+      }
+    }
+  }
+}

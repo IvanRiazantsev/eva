@@ -1,33 +1,128 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  menu: "Menu"
+  technologies_for_the_future: "Technologies for the Future"
+  discover: "Discover"
+  eva_electric_car: "EVA Electric Car"
+  about: >-
+    We are presenting an electric car which we have been working on for over 2 years.
+    For the last six months we have been working on a prototype on the basis of which a production car will be created.
+  differences: "Key Differences"
+  disadvantages: "Existing products disadvantages"
+  printing_forms_complexity: >-
+    The complexity of the manufacture of printing plates and the production
+    of stamped steel parts for the body (requires about $500 million in investments).
+  assembling_complexity: >-
+    The complex process of welding and assembling these parts into the body
+    requires large investments (about $400-500 million).
+  body_protection: >-
+    The need to protect the body from corrosion and varnishing. Cost about $100 million.
+  our_solution: "Our Solution"
+  no_monocoque: "No monocoque body"
+  frame_space: >-
+    We proposed to move away from the monocoque body
+    and make a load-bearing aluminum frame using <b>frame-space</b> technology,
+    on which the elements of the car body and other components will be installed.
+    All costs for the production and equipment of the assembly line will not exceed $10-15 million,
+    which will significantly reduce the cost of the car.
+    Using existing production sites, costs can be reduced to $5-6 million.
+  research: "Research"
+  frame_space_research: >-
+    According to research from the <b>German Aerospace Center at the University of Stuttgart</b>,
+    thanks to the <b>spant-space-frame</b> design of the passenger compartment,
+    cars will be more economical and safer in the future.
+    <b>One of our employees was directly involved in this research.</b>
+  design: "Design"
+  body_made_of: >-
+    The body elements are made of thermoplastic,
+    which does not require varnishing and does not corrode.
+    This allows to reduce production and maintenance costs by <b>1000 times</b>,
+    which significantly affects the final cost of the car.
+    Simultaneously, this improves the safety and comfort of the vehicle.
+  batteries: >-
+    We also propose to install solar panels with an area of 4.2m<sup>2</sup>,
+    which will recharge the main battery and provide an additional 30-40 km per day,
+    which in urban conditions will significantly affect the battery consumption and increase the mileage.
+  power: "Power"
+  batteries_install: >-
+    The frame structure allows us to install a second battery in our car (at the request of the client).
+    The volume of one battery is <b>30 kW/h</b>, which provides a car mileage on one charge up to <b>250 km</b>.
+    When installing a second battery, the mileage increases to <b>500 km</b> on a single charge.
+    <br/>
+    <br/>
+    The weight of a car with one battery is <b>950 kg</b>, with two it is <b>1100 kg</b>.
+  up_to_two_batteries: "Up to 2 batteries"
+  inclusivity: "Inclusivity"
+  accessibility: "Accessibility"
+  accessibility_description: >-
+    The car can be used by people with disabilities in wheelchairs.
+    The gas and brake pedals for this category of persons will be moved from the foot area
+    into the steering wheel area, and up to two persons in wheelchairs will be able to move comfortably in our electric vehicle.
+    The wheelchair will be fixed with special devices while driving,
+    which will maximally protect the driver and passengers.
+  sizes: >-
+    The car's interior has been designed taking into account modern requirements for comfort and safety.
+    Also, a body modification system has been developed to increase the luggage volume.
+    It can hold up to 3m<sup>3</sup> of payload! For comparison, the volume of the trunk of a BMW X7 with folded seats
+    is 2m<sup>3</sup> with a length of 5.15m, and the length of our car is 4.05m.
+    The distance between the rear and front seats is 1.15m,
+    for comparison in Mercedes Maybach this distance is 1.05m.
+    <br/>
+    <br/>
+    The armrests and tabletop consoles retract to make room for loading luggage.
+  specification_title: "Specification"
+  sizes_inside: >-
+    <span class="circled-number">&#9312;</span> 1200 mm
+    <br/>
+    <span class="circled-number">&#9313;</span> 1700 mm
+    <br/>
+    <span class="circled-number">&#9314;</span> 1150 mm
+  sizes_rear: >-
+    <span class="circled-number">&#9312;</span> 1805 mm
+    <br/>
+    <span class="circled-number">&#9313;</span> 1715 mm
+  sizes_side: >-
+    <span class="circled-number">&#9312;</span> 4050 mm
+  price: >-
+    With one battery &mdash; <b>$16000</b>
+    <br/>
+    With two batteries &mdash; <b>$22000</b>
+  weight: >-
+    With one battery &mdash; <b>950 kg</b>
+    <br/>
+    With two batteries &mdash; <b>1100 kg</b>
+  inside: "Inside components"
+  inside_components: >-
+    <span class="circled-number">&#9312;</span> Monitor
+    <br/>
+    <span class="circled-number">&#9313;</span> Retractable tables
+    <br/>
+    <span class="circled-number">&#9314;</span> Tablets
+    <br/>
+    <span class="circled-number">&#9315;</span> Retractable console
+  safety: "Safety"
+  safety_list: >-
+    With its small size, our car has three levels of safety:
+    <br/>
+    <br/>
+    <span class="circled-number">&#9312;</span> Airbags for driver and passenger
+    <br/>
+    <span class="circled-number">&#9313;</span> Airbags for the car itself <b>(new technology)</b>
+    <br/>
+    <span class="circled-number">&#9314;</span> Airbags for pedestrians and cyclists
+  safety_pedestrians: >-
+    A very important point is the installation of airbags for the car and pedestrians.
+    We have patented this technology and it will be used for the first time in road transport.
+    Thanks to it, we increase safety for passengers, pedestrians and cyclists.
+  footer: "We are building the future - become a part of it!"
+  email: "Email"
+  phone: "Phone"
+  top_bar:
+    about: "About"
+    differences: "Differences"
+    design:
+      design: "Design"
+      specification: "Specification"
+      inside: "Inside"
+    power: "Power"
+    inclusivity: "Inclusivity"
+    safety: "Safety"

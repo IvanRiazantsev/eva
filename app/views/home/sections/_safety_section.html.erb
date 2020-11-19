@@ -1,0 +1,36 @@
+<section class="safety-section" id="safety">
+  <div class="container pt-3">
+    <div class="mx-auto text-center mb-3">
+      <h1 class="mx-auto my-0 text-black"><u><%= t(:safety) %></u></h1>
+    </div>
+
+    <div class="row justify-content-between mb-4 mb-lg-5">
+      <div class="col-xl-4 col-lg-5">
+        <div class="featured-text text-justify">
+          <p class="text-black-50 mb-0 text-left"><%= t(:safety_list).html_safe %></p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-5">
+        <div class="featured-text text-justify" style="height: 100%">
+          <p class="text-black-50 mb-0"><%= t(:safety_pedestrians).html_safe %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-between pb-5">
+      <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+        <%= image_tag 'eva/airbags1.jpeg', class: 'img-fluid' %>
+      </div>
+      <div style="width: 2px; background-color: #a5a5a5;" class="d-none d-lg-block"></div>
+      <div style="height: 2px; width: 80%; background-color: #a5a5a5; margin: 0 auto" class="d-lg-none"></div>
+      <div class="col-12 col-lg-5 align-self-center mt-3 mt-lg-0">
+        <%= image_tag 'eva/airbags2.jpeg', class: 'img-fluid' %>
+      </div>
+    </div>
+  </div>
+
+
+</section>

@@ -32,7 +32,9 @@
 
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
-        $(".navbar-collapse").collapse("hide");
+        if (!$(this).hasClass('dropdown-toggle')) {
+            $(".navbar-collapse").collapse("hide");
+        }
     });
 
     // Activate scrollspy to add active class to navbar items on scroll
@@ -45,8 +47,10 @@
     var navbarCollapse = function () {
         if ($("#mainNav").offset().top > 100) {
             $("#mainNav").addClass("navbar-shrink");
+            $('svg#nav-logo stop.logo_stop').addClass("inverted");
         } else {
             $("#mainNav").removeClass("navbar-shrink");
+            $('svg#nav-logo stop.logo_stop').removeClass("inverted");
         }
     };
     // Collapse now if page is not at top

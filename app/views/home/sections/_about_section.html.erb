@@ -1,0 +1,57 @@
+<section class="about-section text-center" >
+  <div class="container">
+
+    <div class="row" id="about">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="text-white mb-4"><%= t(:eva_electric_car) %></h2>
+        <p class="text-white-50">
+          <%= t(:about) %>
+        </p>
+      </div>
+    </div>
+
+    <div id="image-slider" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <%= image_tag 'eva/1.jpg', class: 'img-fluid' %>
+          </li>
+          <li class="splide__slide">
+            <%= image_tag 'eva/3.jpg', class: 'img-fluid' %>
+          </li>
+          <li class="splide__slide">
+            <%= image_tag 'eva/9adopted.jpg', class: 'img-fluid' %>
+          </li>
+          <li class="splide__slide">
+            <%= image_tag 'eva/5.1adopted.png', class: 'img-fluid' %>
+          </li>
+          <li class="splide__slide">
+            <%= image_tag 'eva/8.1adopted.jpg', class: 'img-fluid' %>
+          </li>
+          <li class="splide__slide">
+            <%= image_tag 'eva/10.1adopted.jpg', class: 'img-fluid' %>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid">
+    <div class="row justify-content-center pb-5">
+      <div class="col-8 col-lg-3 mb-3 mt-3 mb-lg-0 mt-lg-0 align-self-lg-center">
+        <%= image_tag 'eva/eva0110.JPG', class: 'img-fluid' %>
+      </div>
+      <div style="width: 2px; background-color: #5a5a5a;" class="d-none d-lg-block"></div>
+      <div style="height: 2px; width: 80%; background-color: #5a5a5a;" class="d-lg-none"></div>
+      <div class="col-8 col-lg-3 mb-3 mt-3 mb-lg-0 mt-lg-0">
+        <%= image_tag 'eva/IMG_4248.JPG', class: 'img-fluid' %>
+      </div>
+      <div style="width: 2px; background-color: #5a5a5a;" class="d-none d-lg-block"></div>
+      <div style="height: 2px; width: 80%; background-color: #5a5a5a;" class="d-lg-none"></div>
+      <div class="col-8 col-lg-3 mb-3 mt-3 mb-lg-0 mt-lg-0">
+        <%= image_tag 'eva/IMG_4254.JPG', class: 'img-fluid' %>
+      </div>
+    </div>
+  </div>
+</section>

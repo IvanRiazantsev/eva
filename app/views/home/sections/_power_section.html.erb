@@ -1,0 +1,21 @@
+<section class="power-section" id="power">
+  <div class="container pt-3">
+    <div class="mx-auto text-center mb-3">
+      <h1 class="mx-auto my-0 text-white"><u><%= t(:power) %></u></h1>
+    </div>
+
+    <div class="row align-items-center no-gutters pb-4 pb-lg-5">
+      <div class="col-xl-8 col-lg-7">
+        <%= image_tag I18n.locale == :ru ? 'eva/battaries_square.png' : 'eva/batteries_square_en.png', class: 'img-fluid mb-3 mb-lg-0' %>
+      </div>
+      <div class="col-xl-4 col-lg-5">
+        <div class="featured-text text-justify">
+          <h4 class="text-white"><%= t(:up_to_two_batteries) %></h4>
+          <p class="text-white-50 mb-0"><%= t(:batteries_install).html_safe %></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
